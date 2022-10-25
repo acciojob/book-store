@@ -10,32 +10,32 @@ public class BookRepository {
         
     }
 
-    Book save(Book book){
+    public Book save(Book book){
         return null;
     }
 
-    Book findBookById(int id){
+    public Book findBookById(int id){
 
         return null;
     }
 
-    List<Book> findAll(){
+    public List<Book> findAll(){
         return null;
     }
 
-    void deleteBookById(int id){
+    public void deleteBookById(int id){
         return;
     }
 
-    void deleteAll(){
+    public void deleteAll(){
         return;
     }
 
-    List<Book> findBooksByAuthor(String author){
+    public List<Book> findBooksByAuthor(String author){
         return null;
     }
 
-    List<Book> findBooksByGenre(String genre){
+    public List<Book> findBooksByGenre(String genre){
         return null;
     }
 }

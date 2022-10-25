@@ -1,4 +1,4 @@
 {
     "testRepo": "book-store-solution",
-    "pathToFile": "src/test/java/com/driver/TestCases.java"
+    "pathToFile": "src/test/java/com/driver/test/TestCases.java"
 }
