@@ -10,14 +10,6 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
-    services:
-      mysql:
-        image: mysql:5.7
-        env:
-          MYSQL_ROOT_PASSWORD: password
-        ports:
-        - 32574:3306
-        options: --health-cmd="mysqladmin ping" --health-interval=10s --health-timeout=5s --health-retries=3
     steps:
     - uses: actions/checkout@v3
     - name: Set up JDK 11
@@ -28,4 +20,6 @@ jobs:
         cache: maven
     - name: Junit Assignment Action
       id: assignmentAction
-      uses: iam-abhi/junit-github-action@v0.10
+      uses: acciojob/junit-github-action@v0.10
+      env:
+          ACCIO_ASGMNT_ACTION_TOKEN: ${{ secrets.ACCIO_ASGMNT_ACTION_TOKEN }}
